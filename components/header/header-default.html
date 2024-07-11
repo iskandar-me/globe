@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Header Default</title>
+
+      <link rel="stylesheet" href="../../assets/css/output.css" />
+   </head>
+   <body>
+      <header
+         class="flex justify-between items-center pt-4 px-6 md:pt-[17px] md:px-[95px] lg:pt-[21px] lg:px-[104px]">
+         <nav
+            class="hidden md:block text-left leading-[17px] font-semibold tracking-normal">
+            <ul
+               class="flex items-center gap-2 md:gap-4 lg:gap-8 text-[14px] text-[#112211]">
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
+                  <img
+                     class="fill-current text-red-500 stroke-red-500"
+                     src="../../assets/img/plane.svg"
+                     alt="" />
+                  <span class="hidden md:block">Find Flight</span>
+               </li>
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
+                  <img src="../../assets/img/bed.svg" alt="" />
+                  <span class="hidden md:block">Find Stays</span>
+               </li>
+            </ul>
+         </nav>
+         <a
+            class="block px-3 py-2 rounded-lg hover:bg-slate-300 hover:text-green-300 fill-white transition-all duration-300"
+            href="./header-default.html">
+            <img src="../../assets/img/logo.svg" alt="The Globe logo" />
+         </a>
+         <div class="flex gap-2 md:gap-8">
+            <button
+               class="block bg-black text-white md:bg-inherit md:text-black dark:text-white dark:bg-black py-2 px-5 md:py-[10px] md:px-6 rounded-lg hover:bg-[#8DD3BB] hover:text-white transition-all duration-300 active:scale-95">
+               Login
+            </button>
+            <button
+               class="hidden md:block py-2 px-5 md:py-[10px] md:px-6 bg-black text-white rounded-lg hover:bg-[#8DD3BB] transition-all duration-200 active:scale-95">
+               Sign up
+            </button>
+            <button
+               class="menu-btn md:hidden py-2 px-3 rounded-lg cursor-pointer hover:bg-[#8DD3BB] duration-200 active:scale-95">
+               <img class="" src="../../assets/img/menu.svg" alt="" />
+            </button>
+         </div>
+
+         <aside
+            class="sidebar hidden w-full h-fit absolute md:hidden top-16 left-1/2 -translate-x-1/2 py-4 px-36 text-white bg-white rounded-md z-20">
+            <ul
+               class="flex flex-col justify-center items-center gap-2 md:gap-4 lg:gap-8 text-[14px] text-[#112211]">
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-[#00000080] hover:border-b-[#8DD3BB] hover:text-[#8DD3BB] transition-all duration-200">
+                  <img
+                     class="fill-current text-red-500 stroke-red-500"
+                     src="../../assets/img/plane.svg"
+                     alt="" />
+                  <span class="">Find Flight</span>
+               </li>
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-[#00000080] hover:border-b-[#8DD3BB] hover:text-[#8DD3BB] transition-all duration-200">
+                  <img src="../../assets/img/bed.svg" alt="" />
+                  <span class="">Find Stays</span>
+               </li>
+               <li>
+                  <button
+                     class="py-2 px-5 md:py-[10px] md:px-6 bg-black text-white rounded-lg hover:bg-[#8DD3BB] transition-all duration-200 active:scale-95">
+                     Sign up
+                  </button>
+               </li>
+            </ul>
+         </aside>
+      </header>
+      <div
+         class="overlay hidden absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+      <script src="./header-default.js"></script>
+   </body>
+</html>

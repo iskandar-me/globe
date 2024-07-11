@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Header Logged in</title>
+
+      <link rel="stylesheet" href="../../assets/css/output.css" />
+      <link rel="stylesheet" href="./header-logged-in.css" />
+   </head>
+   <body>
+      <header
+         class="flex justify-between items-center pt-4 px-6 md:pt-[17px] md:px-16 lg:pt-[21px] lg:px-[104px] text-left leading-[17px] font-semibold tracking-normal">
+         <nav class="hidden md:block">
+            <ul
+               class="flex items-center gap-2 md:gap-4 lg:gap-8 text-[14px] text-[#112211] text-left leading-[17px] font-semibold tracking-normal">
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
+                  <img
+                     class="fill-current text-red-500 stroke-red-500"
+                     src="../../assets/img/plane.svg"
+                     alt="" />
+                  <span class="hidden md:block">Find Flight</span>
+               </li>
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
+                  <img src="../../assets/img/bed.svg" alt="" />
+                  <span class="hidden md:block">Find Stays</span>
+               </li>
+            </ul>
+         </nav>
+         <a
+            class="block px-3 py-2 rounded-lg hover:bg-slate-300 hover:text-green-300 fill-white transition-all duration-300"
+            href="./header-logged-in.html">
+            <img src="../../assets/img/logo.svg" alt="The Globe logo" />
+         </a>
+         <div class="flex gap-2 md:gap-8">
+            <a
+               class="group flex gap-1.5 items-center py-1 px-1.5 rounded-md cursor-pointer hover:text-white hover:bg-[#8DD3BB] transition-all duration-200 ease active:scale-95"
+               href="#">
+               <img src="../../assets/img/heart.svg" alt="" />
+               <span
+                  class="hidden sm:block border-r-4 py-1 sm:pr-3 md:pr-4 border-[#112211] group-hover:border-white"
+                  >Favourites
+               </span>
+            </a>
+
+            <button
+               class="user__profile flex items-center gap-1 py-0 px-1 md:py-0 md:px-3 rounded-lg hover:bg-[#8DD3BB] transition-all duration-200">
+               <span class="relative">
+                  <img
+                     class="w-[45px] h-[45px]"
+                     src="../../assets/img/profile-picture.svg"
+                     alt="Profile picture of the user"
+                     width="45"
+                     height="45" />
+                  <img
+                     class="user__arrow-down-icon absolute right-1 bottom-0 duration-200 transition-all ease-linear"
+                     src="../../assets/img/arrow-down.svg"
+                     alt="Arrow down icon" />
+               </span>
+               <span class="hidden md:block text-[#112211] font-semibold"
+                  >John D.</span
+               >
+            </button>
+            <button class="menu-btn">
+               <img
+                  class="md:hidden py-2 px-3 rounded-lg cursor-pointer hover:bg-[#8DD3BB] duration-200 active:scale-95"
+                  src="../../assets/img/menu.svg"
+                  alt="" />
+            </button>
+         </div>
+         <aside
+            class="sidebar hidden w-full h-fit absolute  top-16 left-1/2 -translate-x-1/2 py-4 px-36 text-white bg-white rounded-md z-20">
+            <ul
+               class="flex flex-col justify-center items-center gap-2 md:gap-4 lg:gap-8 text-[14px] text-[#112211]">
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-[#00000080] hover:border-b-[#8DD3BB] hover:text-[#8DD3BB] transition-all duration-200">
+                  <img
+                     class="fill-current text-red-500 stroke-red-500"
+                     src="../../assets/img/plane.svg"
+                     alt="" />
+                  <span class="">Find Flight</span>
+               </li>
+               <li
+                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-[#00000080] hover:border-b-[#8DD3BB] hover:text-[#8DD3BB] transition-all duration-200">
+                  <img src="../../assets/img/bed.svg" alt="" />
+                  <span class="">Find Stays</span>
+               </li>
+            </ul>
+         </aside>
+      </header>
+      <div
+         class="user__actions-modal hidden absolute right-10 sm:right-16 md:right-[117px] rounded-[12px] shadow-[0px_2px_10px_0px_rgba(0,0,0,0.05)] bg-white p-8 z-20 transition-all duration-700 ease-linear">
+         <div
+            class="id flex gap-2 sm:gap-3 md:gap-4 border-b-2 border-b-[#11221166] pb-3 sm:pb-4 md:pb-6 mb-3 sm:mb-4 md:mb-6">
+            <img
+               src="../../assets/img/profile-picture.svg"
+               alt="Profile picture of the user" />
+            <span
+               class="name flex flex-col gap-1 text-[#112211] text-[16px] tracking-normal">
+               <span class="leading-5 font-semibold pr-16">John Doe.</span>
+               <span class="leading-[17px] font-normal">Online</span>
+            </span>
+         </div>
+         <ul
+            class="border-b-2 border-b-[#11221166] pb-3 sm:pb-4 md:pb-6 mb-3 sm:mb-4 md:mb-6">
+            <li
+               class="group flex justify-between rounded-md hover:bg-slate-500 hover:text-white p-1 md:p-2 transition-all duration-200 ease-linear cursor-pointer">
+               <span class="flex gap-1 sm:gap-2">
+                  <img src="../../assets/img/user.svg" alt="" />
+                  <span title="My account">My account</span>
+               </span>
+               <span class="group-hover:translate-x-1">
+                  <img src="../../assets/img/icon-arrow-right.svg" alt="" />
+               </span>
+            </li>
+            <li
+               class="group flex justify-between rounded-md hover:bg-slate-500 hover:text-white p-1 md:p-2 transition-all duration-200 ease-linear cursor-pointer">
+               <span class="flex gap-1 sm:gap-2">
+                  <img src="../../assets/img/card.svg" alt="" />
+                  <span title="Payments">Payments </span>
+               </span>
+               <span class="group-hover:translate-x-1">
+                  <img src="../../assets/img/icon-arrow-right.svg" alt="" />
+               </span>
+            </li>
+            <li
+               class="group flex justify-between rounded-md hover:bg-slate-500 hover:text-white p-1 md:p-2 transition-all duration-200 ease-linear cursor-pointer">
+               <span class="flex gap-1 sm:gap-2">
+                  <img src="../../assets/img/settings.svg" alt="" />
+                  <span title="Settings">Settings</span>
+               </span>
+               <span class="group-hover:translate-x-1">
+                  <img src="../../assets/img/icon-arrow-right.svg" alt="" />
+               </span>
+            </li>
+         </ul>
+         <ul>
+            <li
+               class="group flex justify-between rounded-md hover:bg-slate-500 hover:text-white p-1 md:p-2 transition-all duration-200 ease-linear cursor-pointer">
+               <span class="flex gap-1 sm:gap-2">
+                  <img src="../../assets/img/support.svg" alt="" />
+                  <span title="Support">Support</span>
+               </span>
+               <span class="group-hover:translate-x-1">
+                  <img src="../../assets/img/icon-arrow-right.svg" alt="" />
+               </span>
+            </li>
+            <li
+               class="group flex justify-between rounded-md hover:bg-slate-500 hover:text-white p-1 md:p-2 transition-all duration-200 ease-linear cursor-pointer">
+               <span class="flex gap-1 sm:gap-2">
+                  <img src="../../assets/img/logout.svg" alt="" />
+                  <span title="Logout">Logout</span>
+               </span>
+            </li>
+         </ul>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fuga, ea libero ipsa et sed eligendi nihil cupiditate dolorem exercitationem voluptate dicta odit, commodi corporis voluptas placeat maiores incidunt reiciendis deleniti similique quae officia id sunt. Mollitia vero a at commodi totam unde nobis? Quae aperiam, quia natus nostrum id praesentium libero quas vitae, placeat dicta unde debitis provident architecto et beatae quod hic? Sequi quidem soluta fugit placeat temporibus pariatur quisquam veritatis, atque, culpa cupiditate reiciendis est quia iusto repellat consequuntur nisi eaque nemo sunt qui. Asperiores ducimus alias natus? Quis optio tempora est nesciunt, nam sunt voluptates voluptatum? Numquam hic expedita non fugit quam, consequuntur cupiditate provident magni vitae optio, quod eum id. Cupiditate dolorem tenetur odio, saepe laudantium ut necessitatibus atque quas neque reiciendis eum modi veniam ducimus alias architecto, ad illum ipsum perferendis ipsam commodi libero. Officia iste illo sint autem repellendus inventore dignissimos vel facilis nobis sequi, distinctio sed ad commodi nesciunt, sunt veritatis ratione hic nostrum enim in maxime deleniti molestias eius. Perspiciatis natus optio, corrupti tenetur sit quisquam. Velit, quaerat, saepe nemo voluptatum vitae sunt quisquam iure cumque sint necessitatibus modi omnis laborum ipsum recusandae! Temporibus at ea deleniti velit delectus, ut fugit odio mollitia praesentium ex. Ullam libero maxime asperiores praesentium labore, numquam repellat totam vitae nam molestiae magnam nesciunt illo distinctio quos! At praesentium ipsum minima quos facere. Aperiam, totam aliquam dolorem amet corporis ullam nobis, explicabo mollitia neque dolores dolor quasi perspiciatis eveniet a eius. Ipsum doloremque aspernatur voluptatibus deserunt, nesciunt excepturi quasi? Eos, voluptas ullam iusto recusandae cumque sunt aut commodi eligendi ea dicta odit, amet itaque! Officiis, eaque asperiores cum autem mollitia possimus molestias aspernatur laboriosam fugiat suscipit magni placeat quaerat corrupti commodi porro aperiam quis! Sit quaerat aperiam ea expedita quo id enim harum et voluptate dolor, totam omnis repudiandae, architecto nihil accusamus. Laudantium magnam facilis, culpa aspernatur debitis quasi quae commodi, reiciendis similique velit ullam assumenda porro molestiae quia! Temporibus ut ducimus culpa, vel, est pariatur explicabo possimus distinctio dolorem quibusdam quasi illo ab fuga, mollitia atque unde totam vitae iste? Libero dignissimos, adipisci temporibus voluptatum ex sunt enim impedit, quae facilis sit dicta officia eum exercitationem? Facilis ipsa iure libero omnis deserunt, recusandae, adipisci quo numquam alias totam laudantium dolorem nesciunt iusto eius accusamus molestiae sapiente necessitatibus deleniti quibusdam sint vitae, placeat quis harum officiis! Saepe veniam, molestias qui sit repudiandae incidunt delectus reiciendis recusandae placeat pariatur quas quos aut sapiente corrupti? Ipsa, non ad! Doloribus tenetur quos quisquam, ex fuga sit eum illo molestias officia est voluptatem sed impedit voluptates, nemo animi, odit enim obcaecati rem dolorem facere alias quam laudantium. Iste quasi, nam illo necessitatibus dolore molestias, enim fugit, ducimus voluptate reprehenderit nesciunt vero animi doloribus similique rerum alias ipsam neque sequi nostrum sit officia eum quos beatae! At incidunt obcaecati sit nobis quas temporibus optio illo distinctio deserunt et odio soluta debitis quis dolorum autem consectetur quisquam quia voluptate quod, laudantium aspernatur voluptatibus? Ratione, sit! Neque ipsum aliquid hic, libero impedit blanditiis!</p>
+      <div
+         class="overlay hidden absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+
+      <script src="./header-logged-in.js"></script>
+   </body>
+</html>

@@ -1,0 +1,13 @@
+{
+   "name": "globe",
+   "version": "1.0.0",
+   "description": "",
+   "main": "tailwind.config.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "tailwind-watch": "tailwindcss -o output.css --watch",
+      "dev": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/output.css --watch"
+   },
+   "author": "",
+   "license": "ISC"
+}
