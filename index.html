@@ -1,12 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/output.css">
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Globe</title>
+      <link
+         rel="shortcut icon"
+         href="./assets/img/logo.svg"
+         type="image/x-icon" />
+      <link rel="stylesheet" href="./assets/css/output.css" />
+      <link rel="stylesheet" href="./components/header/header-logged-in.css" />
+      <link rel="stylesheet" href="./assets/css/main.css" />
+   </head>
+   <body class="p-5 sm:p-6 md:p-[30px]">
+      <!-- Header -->
+      <div
+         class="header-wrapper relative rounded-3xl bg-[linear-gradient(180deg,_rgba(0,0,0,0),_rgba(0,0,0,0.6)_100%)]">
+         <header
+            class="header flex justify-between items-center top-0 w-full text-white font-semibold leading-[17px] tracking-normal py-4 px-6 md:py-[17px] md:px-[95px] lg:py-[21px] lg:px-[104px]">
+            <nav
+               class="hidden md:block text-left leading-[17px] font-semibold tracking-normal">
+               <ul
+                  class="flex items-center gap-2 md:gap-4 lg:gap-8 text-[14px]">
+                  <li
+                     class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
+                     <!-- <img
+                    class="fill-current text-red-500 stroke-red-500"
+                    src="./assets/img/icons/plane.svg"
+                    alt="" /> -->
+                     <svg
+                        width="22.500977"
+                        height="19.500000"
+                        viewBox="0 0 22.501 19.5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>Created with Pixso.</desc>
+                        <defs />
+                        <path
+                           id="Vector"
+                           d="M17.51 8.26L14.47 8.34C14.46 8.34 14.44 8.34 14.43 8.33C14.41 8.32 14.4 8.31 14.39 8.3L8.32 0.91C8.28 0.86 8.24 0.82 8.18 0.79C8.13 0.77 8.07 0.75 8.01 0.75L6.75 0.75L10.17 8.29C10.18 8.31 10.18 8.33 10.18 8.35C10.18 8.37 10.17 8.38 10.16 8.4C10.15 8.42 10.13 8.43 10.12 8.44C10.1 8.45 10.08 8.45 10.06 8.45L4.36 8.53C4.3 8.54 4.24 8.52 4.19 8.5C4.13 8.47 4.08 8.43 4.05 8.39L2.31 6.28C2.17 6.1 1.91 6 1.68 6L0.8 6C0.74 6 0.75 6.05 0.76 6.11L1.69 9.46C1.76 9.64 1.76 9.84 1.69 10.02L0.76 13.35C0.73 13.45 0.74 13.5 0.84 13.5L1.68 13.5C2.07 13.5 2.12 13.45 2.31 13.2L4.08 11.06C4.12 11.01 4.16 10.97 4.22 10.95C4.27 10.92 4.33 10.91 4.39 10.91L10.05 11.04C10.07 11.04 10.09 11.04 10.1 11.05C10.12 11.06 10.14 11.08 10.15 11.1C10.16 11.11 10.17 11.13 10.17 11.15C10.17 11.17 10.17 11.2 10.16 11.21L6.75 18.75L8 18.75C8.06 18.74 8.12 18.72 8.17 18.7C8.22 18.67 8.27 18.63 8.31 18.58L14.39 11.2C14.41 11.17 14.49 11.16 14.52 11.16L17.51 11.24C17.67 11.25 18.2 11.25 18.36 11.25C20.43 11.25 21.75 10.68 21.75 9.75C21.75 8.81 20.44 8.25 18.36 8.25C18.2 8.25 17.66 8.25 17.51 8.26Z"
+                           stroke="#fff"
+                           fill="#fff"
+                           stroke-opacity="1.000000"
+                           stroke-width="1.500000"
+                           stroke-linejoin="round" />
+                     </svg>
 
-</body>
+                     <span class="hidden md:block">Find Flight</span>
+                  </li>
+                  <li
+                     class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
+                     <!-- <img src="./assets/img/icons/bed.svg" alt="" /> -->
+                     <svg
+                        width="21.000000"
+                        height="16.500000"
+                        viewBox="0 0 21 16.5"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>Created with Pixso.</desc>
+                        <defs />
+                        <path
+                           id="Vector"
+                           d="M18.75 7.06C18.27 6.85 17.76 6.74 17.25 6.75L3.75 6.75C3.23 6.74 2.72 6.85 2.25 7.06C1.58 7.35 1.01 7.83 0.61 8.44C0.21 9.05 0 9.77 0 10.5L0 15.75C0 15.94 0.07 16.13 0.21 16.28C0.36 16.42 0.55 16.5 0.75 16.5C0.94 16.5 1.13 16.42 1.28 16.28C1.42 16.13 1.5 15.94 1.5 15.75L1.5 15.37C1.5 15.27 1.54 15.18 1.61 15.11C1.68 15.04 1.77 15 1.87 15L19.12 15C19.22 15 19.31 15.04 19.38 15.11C19.45 15.18 19.49 15.27 19.5 15.37L19.5 15.75C19.5 15.94 19.57 16.13 19.71 16.28C19.86 16.42 20.05 16.5 20.25 16.5C20.44 16.5 20.63 16.42 20.78 16.28C20.92 16.13 21 15.94 21 15.75L21 10.5C20.99 9.77 20.78 9.05 20.38 8.44C19.98 7.83 19.41 7.35 18.75 7.06ZM16.12 0L4.87 0C4.17 0 3.51 0.27 3.01 0.76C2.52 1.26 2.25 1.92 2.25 2.62L2.25 6C2.25 6.02 2.25 6.05 2.26 6.08C2.28 6.1 2.3 6.13 2.32 6.14C2.34 6.16 2.37 6.17 2.4 6.18C2.43 6.18 2.46 6.18 2.48 6.17C2.89 6.06 3.32 5.99 3.75 6L3.94 6C3.99 6 4.03 5.98 4.07 5.95C4.1 5.92 4.13 5.87 4.13 5.83C4.17 5.46 4.35 5.12 4.62 4.88C4.9 4.63 5.25 4.5 5.62 4.5L8.25 4.5C8.61 4.5 8.97 4.63 9.25 4.88C9.52 5.12 9.69 5.46 9.74 5.83C9.74 5.87 9.76 5.92 9.8 5.95C9.83 5.98 9.88 6 9.92 6L11.07 6C11.12 6 11.16 5.98 11.2 5.95C11.23 5.92 11.25 5.87 11.26 5.83C11.3 5.46 11.47 5.12 11.75 4.88C12.02 4.63 12.38 4.5 12.75 4.5L15.37 4.5C15.74 4.5 16.09 4.63 16.37 4.88C16.65 5.12 16.82 5.46 16.86 5.83C16.87 5.87 16.89 5.92 16.92 5.95C16.96 5.98 17 6 17.05 6L17.25 6C17.67 5.99 18.1 6.06 18.51 6.18C18.53 6.18 18.56 6.19 18.59 6.18C18.62 6.17 18.65 6.16 18.67 6.15C18.69 6.13 18.71 6.1 18.73 6.08C18.74 6.05 18.75 6.02 18.75 6L18.75 2.62C18.75 1.92 18.47 1.26 17.98 0.76C17.48 0.27 16.82 0 16.12 0Z"
+                           fill="#fff"
+                           stoke="#fff"
+                           fill-opacity="1.000000"
+                           fill-rule="nonzero" />
+                     </svg>
+
+                     <span class="hidden md:block">Find Stays</span>
+                  </li>
+               </ul>
+            </nav>
+            <a
+               class="h-fit px-3 py-2 rounded-lg hover:bg-slate-300 hover:text-green-300 fill-white transition-all duration-300"
+               href="./index.html">
+               <img
+                  class=""
+                  src="./assets/img/icons/logo-white.svg"
+                  alt="The Globe logo" />
+            </a>
+            <div class="flex items-center gap-2 sm:gap-4 md:gap-8 h-fit pr-10">
+               <button
+                  class="block bg-white text-black md:text-white md:bg-inherit py-2 px-5 md:py-[10px] md:px-6 rounded-lg hover:bg-[#8DD3BB] hover:text-white transition-all duration-300 active:scale-95">
+                  Login
+               </button>
+               <button
+                  class="hidden md:block py-2 px-5 md:py-[10px] md:px-6 bg-white text-black rounded-lg hover:bg-[#8DD3BB] transition-all duration-200 active:scale-95">
+                  Sign up
+               </button>
+               <button
+                  class="menu-btn md:hidden py-2 px-3 rounded-lg cursor-pointer hover:bg-[#8DD3BB] duration-200 active:scale-95">
+                  <img class="" src="./assets/img/icons/menu.svg" alt="" />
+               </button>
+            </div>
+         </header>
+      </div>
+      <p>
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+         architecto, molestiae aperiam voluptas dolore totam, repudiandae
+         perspiciatis a, nostrum quam quod. Quo quibusdam ullam molestias
+         deleniti, quisquam facilis accusantium. Ratione, quaerat ipsa eligendi
+         unde recusandae vero aliquam aut. Consectetur aperiam voluptatibus
+         consequuntur, eos dolor, vel beatae, voluptas officiis amet explicabo
+         qui commodi impedit quos et facilis. Fugit sapiente nobis eos, vel eius
+         exercitationem repellendus perferendis adipisci temporibus maxime optio
+         quidem alias. Quia architecto soluta alias perferendis voluptatum culpa
+         cum unde deserunt dolor. Consequuntur dolores ipsa tempore beatae eius
+         perferendis incidunt harum officia fugiat nulla necessitatibus nostrum,
+         perspiciatis maiores accusantium nisi iste consequatur facere, ut
+         temporibus. Nemo modi laborum numquam ipsum sit mollitia ad voluptatum
+         eum similique. Reiciendis recusandae quisquam voluptatum velit esse
+         similique, delectus tenetur. Animi cum similique esse inventore
+         quisquam facilis ad, aliquid vel ipsum nihil minima sint consequuntur,
+         veritatis maxime! Veniam, autem, omnis minus soluta dicta eos,
+         perferendis fugiat aliquam a optio deleniti doloremque repellendus.
+         Placeat, atque. Dignissimos nihil nisi in cupiditate quasi consequatur.
+         Error, incidunt excepturi ipsum voluptatum vitae at nam. Quasi, non
+         nobis eos corporis aspernatur eveniet autem aut reiciendis at provident
+         repellendus eaque dignissimos sapiente dolor animi eligendi libero
+         impedit tempore, molestias incidunt et doloribus iure exercitationem
+         veniam. Odit, id exercitationem ipsum minus sequi quo optio veniam?
+         Maxime aliquam delectus, dicta rem accusantium illo voluptatibus
+         deserunt placeat. Accusamus soluta illum sequi nulla! Magni quam ex
+         maiores praesentium impedit cupiditate laboriosam illo quasi nostrum,
+         nemo ratione sint veniam aperiam neque laudantium voluptas, debitis
+         quibusdam suscipit similique ab velit voluptatibus et! Repellat fugiat
+         soluta dignissimos atque consequatur ipsam est delectus rerum, quam
+         laborum quasi, laudantium, eveniet distinctio nesciunt! Reprehenderit
+         perferendis voluptatum neque eveniet. Nam cumque fugit hic vero animi
+         odio corporis eius voluptatem facilis sint praesentium debitis
+         cupiditate voluptatibus mollitia, veniam est pariatur totam blanditiis!
+         Aut ipsa consequatur rem? Harum repudiandae modi nam qui tempora
+         provident molestiae, fuga error eaque voluptatum tempore maiores esse
+         non magnam delectus dignissimos aperiam voluptate! Distinctio labore
+         quam nobis recusandae dolorem? Sint pariatur tempore, harum quibusdam
+         sed blanditiis consequuntur! Ab doloremque ea id fugiat perferendis
+         corporis incidunt perspiciatis doloribus facere officia exercitationem
+         impedit minus est laboriosam maxime iusto, eum itaque. Tempora officiis
+         fugit, quibusdam placeat iusto assumenda quasi optio possimus a sit
+         excepturi consequuntur eius pariatur, ipsum accusamus nobis eligendi
+         illum. Laboriosam rerum distinctio repellat. Quibusdam dolores delectus
+         ipsum totam laboriosam aperiam nobis magni in voluptatum nisi facilis
+         accusamus quidem dolorem, quis fuga dolor tenetur. Nulla recusandae
+         voluptatem atque, numquam tempore reprehenderit architecto laboriosam
+         ad aliquam blanditiis fugiat veniam odio quis corrupti quod, aut ex
+         cupiditate quo consequuntur minus amet nemo repellat. Necessitatibus
+         doloribus rem sunt facere distinctio nam nisi ipsam consequuntur, ab
+         facilis ullam ad cumque unde at? Eaque illum perferendis temporibus.
+         Molestiae molestias est quam beatae repellendus ut, sunt ad
+         perspiciatis corporis necessitatibus, ipsa nulla dolore voluptatibus
+         praesentium minus placeat. Cum harum neque nostrum illo laboriosam,
+         sapiente architecto deleniti asperiores qui nisi, quasi officiis
+         molestiae consequatur voluptates nam repellat ullam vel esse cupiditate
+         optio. Sint debitis nulla repellat ipsa ea?
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic modi in distinctio ex iste beatae ea maxime explicabo debitis ullam vitae, eligendi officiis quasi amet perspiciatis omnis dicta culpa deserunt tenetur rerum maiores, cumque tempore repellat! Fugit inventore aliquid at iste magnam ullam, natus saepe deleniti nisi maxime unde laboriosam exercitationem debitis dolorum aut magni architecto alias consequuntur incidunt dolores, iure asperiores doloremque! Cupiditate fuga voluptatem asperiores? Non maxime voluptatum optio earum aliquam ex temporibus laborum. Non, delectus temporibus tempore sint nihil error laborum, illum, placeat ullam modi neque doloremque minima architecto earum saepe quaerat vero amet fuga ducimus cum! Provident facere maxime suscipit dolor nihil reprehenderit quibusdam iste veritatis esse, nulla quo exercitationem mollitia eum sunt. Laborum, expedita dolore, explicabo aliquid eos assumenda, magnam provident laboriosam ducimus at ex voluptas consequuntur vero. Fugiat molestiae nobis iusto explicabo nemo, vel totam iure nesciunt deleniti quas voluptatem fugit necessitatibus ullam error itaque molestias, animi deserunt vitae? Voluptates doloremque, laudantium minus aperiam odit eligendi, asperiores provident ut magnam praesentium nulla reiciendis ratione veniam. Aspernatur, dignissimos laboriosam assumenda culpa sunt quod, consequuntur nostrum ipsum, quam blanditiis accusamus asperiores delectus minus quaerat. Quam, aliquam deleniti iure praesentium nemo architecto repudiandae. Nisi, nam. In quis possimus blanditiis amet velit necessitatibus! Dolorum quisquam corrupti eveniet eos adipisci error! Exercitationem, ipsam quas? Exercitationem ipsum necessitatibus excepturi alias quidem, enim blanditiis sapiente eligendi quae rerum voluptates cum optio fuga eveniet nobis soluta aperiam ut quibusdam inventore! Tempora quo amet itaque, est veritatis mollitia excepturi libero illum ea nam dignissimos cum aliquam corporis repellat provident vel minima laudantium dolorum harum doloribus. Soluta veniam placeat nam. Consectetur ipsam rerum quasi ipsa accusantium nisi consequuntur, similique exercitationem. Quia est nulla adipisci praesentium iste aspernatur sed illum, ratione non ut assumenda animi iure eos blanditiis accusamus eum, reiciendis eligendi expedita nesciunt facere saepe nostrum repellendus nisi cupiditate? Illum numquam ratione ducimus quaerat rem velit ullam? Dolor quam, facere quaerat natus deserunt odit. Pariatur maxime eius omnis dignissimos, id, corrupti aut excepturi facere dicta qui ea sint doloremque fugiat. Repellat ea doloribus eum hic, quos natus alias porro quam voluptas cupiditate maiores animi doloremque suscipit eos laborum minima praesentium facilis neque. Inventore rerum, quos dolor quasi id quibusdam, alias sit consequatur dolores molestias, eligendi ea? Alias iste, atque quos veniam eum voluptates aperiam, ut ex sapiente totam soluta quod architecto asperiores minima unde laboriosam nulla debitis harum tempore nemo amet possimus optio eligendi? Autem, maiores voluptatum officia, fugiat tempore id, maxime beatae placeat ratione assumenda iure molestiae illum consectetur aperiam nulla. Repudiandae illum aut sed dolorem inventore ipsa at dolore corporis tempore minus, quibusdam perspiciatis. Eveniet, repellendus minima voluptas nulla doloribus pariatur ipsa qui deserunt nobis perferendis omnis debitis nihil ea quaerat ab consequatur corporis alias sed, repudiandae corrupti quam rem! Repudiandae dolore ex provident eaque dolores deserunt fuga debitis at voluptatum corporis explicabo, quibusdam iusto, animi deleniti enim expedita sit soluta itaque optio. Ducimus quos ut natus ea voluptas inventore quibusdam, fuga rerum vitae pariatur deleniti delectus officia qui harum labore soluta error corporis ex architecto explicabo dicta animi vel? Itaque, minus? Obcaecati iusto accusantium, illum doloremque nihil, iure earum doloribus tempore sed excepturi exercitationem delectus! Fugiat quidem veniam magnam nulla aliquid magni suscipit, nisi mollitia, velit iusto natus recusandae libero rerum deserunt at, quibusdam cumque laborum est! Cum voluptatum ex vero aperiam maiores sed mollitia eligendi veritatis nemo numquam voluptate, aliquid aut, earum pariatur et ratione ullam expedita consequatur asperiores! Assumenda necessitatibus error provident quis veritatis aliquid, ratione, fuga laudantium illum tempore nemo culpa possimus deleniti? Neque voluptatibus mollitia incidunt id recusandae eum corrupti nam odit harum nisi! Eligendi tenetur temporibus ex. Totam, illo, explicabo saepe quaerat provident soluta pariatur facilis tempora nulla nostrum quis ipsa optio vel. Placeat, quia. Esse in molestiae beatae vero perferendis laudantium, sit, pariatur, error libero aspernatur modi quasi et voluptates odio. Fugiat repudiandae laudantium commodi dolores magni ad est, tenetur cum sit eius! Excepturi vel mollitia aperiam incidunt sunt maiores error labore ullam accusamus. Reprehenderit nulla voluptates vel neque possimus. Atque soluta quaerat vel quia quidem dicta deserunt magni corporis dolorum recusandae, nemo fuga officiis deleniti inventore possimus! Ipsa sequi tempora repudiandae eos earum, esse, officia in cupiditate voluptates corporis ex optio obcaecati minus, necessitatibus incidunt quasi eaque quae libero? Debitis facilis natus voluptatibus exercitationem quam a mollitia sapiente labore qui ex provident, dolore magni distinctio voluptates pariatur illo dolorum, consequuntur vitae dolor delectus maiores cupiditate id recusandae nostrum. Soluta fugit incidunt omnis obcaecati aliquid veritatis necessitatibus, nostrum rerum accusantium nulla, consequatur unde voluptatum dicta. Velit, qui. Sapiente aut tempore beatae odio, quia animi nemo recusandae qui praesentium labore porro consequatur rem cupiditate accusamus, ab reiciendis magni autem perferendis molestiae officia! Aliquam, iure laudantium pariatur quae quidem accusamus rem ad non est aperiam earum voluptatum voluptatem dolor fugit dolores similique, dolorum delectus perspiciatis repellat quam accusantium nostrum. Iusto ipsum nemo ipsa inventore omnis magni laborum maxime praesentium quaerat commodi aliquid, consectetur rem assumenda totam repudiandae velit error vel eum. Soluta neque rem reiciendis sit deserunt, facilis magni ducimus! Mollitia laudantium earum, placeat quibusdam itaque dolorum officiis ad, nulla provident illo ratione consectetur architecto, exercitationem aperiam vitae dignissimos omnis et pariatur. Iste vel tempore, dolores nemo aperiam provident animi? Incidunt minima labore fuga? Nostrum, tenetur itaque fuga cupiditate eveniet facilis est sed iure perferendis harum ipsum dolore, libero expedita quis. Quo, ad. Quisquam amet pariatur nostrum mollitia et repudiandae autem nesciunt quos ipsum sunt esse odit, porro nemo eaque aperiam, minus placeat asperiores reprehenderit? Provident nesciunt, porro veniam iure ipsa reiciendis expedita aspernatur saepe rem accusamus magni id eveniet et illo, quo architecto recusandae officia quos exercitationem alias inventore iusto. Autem doloribus possimus facilis! Minima, hic. Aliquid est illum tempore at nam dolores beatae tenetur officia corporis cupiditate, sunt magnam iure officiis! Eveniet adipisci officia minus qui, nulla nam excepturi perferendis repellat velit, dolor itaque rerum incidunt in. Nulla, exercitationem inventore quidem, facilis molestias vero tempora natus sapiente sint esse delectus eligendi ratione adipisci modi, rerum voluptatum consequatur iste architecto pariatur perspiciatis cumque? Repellat, temporibus aut!</p>
+      <aside
+         class="sidebar hidden w-full h-fit absolute md:hidden top-16 left-0 py-4 px-36 text-black bg-white rounded-b-md z-50">
+         <ul
+            class="flex flex-col justify-center items-center gap-2 md:gap-4 lg:gap-8 text-[14px] text-[#112211]">
+            <li
+               class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-[#00000080] hover:border-b-[#8DD3BB] hover:text-[#8DD3BB] transition-all duration-200">
+               <img
+                  class="fill-current text-red-500 stroke-red-500"
+                  src="./assets/img/icons/plane.svg"
+                  alt="" />
+               <span class="">Find Flight</span>
+            </li>
+            <li
+               class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-[#00000080] hover:border-b-[#8DD3BB] hover:text-[#8DD3BB] transition-all duration-200">
+               <img src="./assets/img/icons/bed.svg" alt="" />
+               <span class="">Find Stays</span>
+            </li>
+            <li>
+               <button
+                  class="py-2 px-5 md:py-[10px] md:px-6 bg-black text-white rounded-lg hover:bg-[#8DD3BB] transition-all duration-200 active:scale-95">
+                  Sign up
+               </button>
+            </li>
+         </ul>
+      </aside>
+      <!-- Overlay -->
+      <div
+         class="overlay hidden absolute top-0 bottom-0 w-full h-full bg-black opacity-50 z-10"></div>
+
+      <script src="./components/header/header-default.js"></script>
+      <script src="./components/header/header.js"></script>
+      <!-- <script src="./components/header/header-logged-in.js"></script> -->
+   </body>
 </html>

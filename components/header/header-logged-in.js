@@ -5,6 +5,7 @@ const userActionsModal = document.querySelector(".user__actions-modal");
 const menuBtn = document.querySelector(".menu-btn");
 const sideBar = document.querySelector(".sidebar");
 const overlay = document.querySelector(".overlay");
+
 userProfile.addEventListener("click", (e) => {
    toggleProfileModal();
 });
@@ -44,12 +45,3 @@ function toggleSidebar() {
    if (window.innerWidth > 768) closeSideBar();
 }
 window.addEventListener("resize", toggleSidebar);
-
- document.querySelector('.id').addEventListener('click',(e)=>{
-  e.stopPropagation()
-  console.log('clicked');
- })
- document.querySelector('.name').addEventListener('click',(e)=>{
-e.stopPropagation()
-  console.log(e.target);
- })
