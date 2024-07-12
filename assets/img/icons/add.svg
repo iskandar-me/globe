@@ -1,0 +1,15 @@
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip46_1185">
+			<rect id="add-outline" rx="-0.500000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="add-outline" rx="-0.500000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip46_1185)">
+		<path id="Vector" d="M8 3.5L8 12.5L8 3.5ZM12.5 8L3.5 8L12.5 8ZM7.27 3.51L7.25 3.5C7.25 3.07 7.58 2.75 8 2.75C8.41 2.75 8.75 3.07 8.75 3.5L8.72 3.51L7.27 3.51ZM8.72 12.48L8.75 12.5C8.75 12.92 8.41 13.25 8 13.25C7.58 13.25 7.25 12.92 7.25 12.5L7.27 12.48L8.72 12.48ZM12.48 7.26L12.5 7.25C12.91 7.25 13.25 7.57 13.25 8C13.25 8.42 12.91 8.75 12.5 8.75L12.48 8.73L12.48 7.26ZM3.52 8.73L3.5 8.75C3.08 8.75 2.75 8.42 2.75 8C2.75 7.57 3.08 7.25 3.5 7.25L3.52 7.26L3.52 8.73Z" fill="#112211" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M8 3.5L8 12.5M12.5 8L3.5 8" stroke="#112211" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+	</g>
+</svg>
