@@ -6,7 +6,11 @@ module.exports = {
       "/assets/img/**/*.{png,jpg,svg}",
    ],
    theme: {
-      extend: {},
+      extend: {
+         width: {
+            '1/3-calc': 'calc(100% / 3)',
+          },
+      },
    },
    plugins: [],
 };

@@ -14,12 +14,14 @@ function openSideBar() {
    overlay.classList.remove("hidden");
    sideBar.classList.remove("hidden");
    document.body.classList.add("overflow-hidden");
+   scrollToTop();
 }
 function closeSideBar() {
    overlay.classList.add("hidden");
    sideBar.classList.add("hidden");
    document.body.classList.remove("overflow-hidden");
    document.body.classList.add("overflow-auto");
+   scrollToTop();
 }
 
 function toggleSidebar() {
@@ -28,6 +30,10 @@ function toggleSidebar() {
       sideBar.classList.add("hidden");
       document.body.classList.remove("overflow-hidden");
       document.body.classList.add("overflow-auto");
+      scrollToTop();
    }
 }
 window.addEventListener("resize", toggleSidebar);
+function scrollToTop() {
+   window.scrollTo({ top: 0, behavior: "smooth" });
+}
