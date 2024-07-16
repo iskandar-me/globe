@@ -144,318 +144,971 @@
          </div>
       </div>
 
-      <!-- Landing page form -->
-      <div class="relative mb-[17rem]">
-         <div
-            class="w-[90%] flex flex-col gap-4 sm:gap-6 md:gap-8 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pt-2 px-4 pb-4 sm:pt-3 sm:px-6 sm:pb-6 md:pt-4 md:px-8 md:pb-8 bg-white rounded-2xl shadow-[0px_5px_10px_0px_rgba(0,0,0,0.06)]">
-            <!-- Tab -->
-            <ul
-               class="flex items-center gap-2 md:gap-4 lg:gap-8 text-[14px] text-[#112211]">
-               <li
-                  class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-b-white border-r border-r-[#D7E2EE] hover:border-b-[#8DD3BB] transition-all duration-200 mr1">
-                  <img class="" src="../../assets/img/icons/plane.svg" alt="" />
-                  <span class="">Find Flight</span>
-               </li>
-               <li
-                  class="ml-1 flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
-                  <img src="../../assets/img/icons/bed.svg" alt="" />
-                  <span class="">Find Stays</span>
-               </li>
-            </ul>
-            <!-- Form -->
-            <form
-               class="w-full flex flex-col md:grid md:grid-cols-4 lg:flex-row items-start md:items-center justify-between gap-8 font-normal tracking-normal leading-tight">
-               <div class="relative flex flex-col w-full">
-                  <label
-                     class="bg-white rounded-sm px-2 absolute left-2 -top-3 text-[14px]"
-                     for="from-to"
-                     >From - To</label
-                  >
-                  <input
-                     class="border border-slate-600 focus:border-violet-500 rounded-[4px] text-[16px] py-1 px-2 sm:py-2 sm:px-3"
-                     type="text"
-                     name="from-to"
-                     id="from-to" />
-               </div>
-               <!-- From & To inputs -->
-               <div class="hidden absolute -bottom-12 flex gap-2 bg-white">
-                  <div class="">
-                     <label class="text-[14px]" for="from">From</label>
+      <main class="flex flex-col gap-7 sm:gap-8 md:gap-10 md:px-[6.5rem]">
+         <section class="relative md:mb-[15rem]">
+            <!-- Landing page form -->
+            <div
+               class="w-[90%] flex flex-col gap-4 sm:gap-6 md:gap-8 absolute top-0 translate-y-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 pt-2 px-4 pb-4 sm:pt-3 sm:px-6 sm:pb-6 md:pt-4 md:px-8 md:pb-8 bg-white rounded-2xl shadow-[0px_5px_10px_0px_rgba(0,0,0,0.06)]">
+               <!-- Tab -->
+               <ul
+                  class="flex items-center gap-2 md:gap-4 lg:gap-8 text-[14px] text-[#112211]">
+                  <li
+                     class="flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-b-white border-r border-r-[#D7E2EE] hover:border-b-[#8DD3BB] transition-all duration-200 mr1">
+                     <img
+                        class=""
+                        src="../../assets/img/icons/plane.svg"
+                        alt="" />
+                     <span class="">Find Flight</span>
+                  </li>
+                  <li
+                     class="ml-1 flex gap-1 cursor-pointer py-2 px-3 md:py-3 md:px-4 border-b-4 border-white hover:border-b-[#8DD3BB] transition-all duration-200">
+                     <img src="../../assets/img/icons/bed.svg" alt="" />
+                     <span class="">Find Stays</span>
+                  </li>
+               </ul>
+               <!-- Form -->
+               <form
+                  class="w-full flex flex-col md:grid md:grid-cols-4 lg:flex-row items-start md:items-center justify-between gap-8 font-normal tracking-normal leading-tight">
+                  <div class="relative flex flex-col w-full">
+                     <label
+                        class="bg-white rounded-sm px-2 absolute left-2 -top-3 text-[14px]"
+                        for="from-to"
+                        >From - To</label
+                     >
+                     <input
+                        class="border border-slate-600 focus:border-violet-500 rounded-[4px] text-[16px] py-1 px-2 sm:py-2 sm:px-3"
+                        type="text"
+                        name="from-to"
+                        id="from-to" />
+                  </div>
+                  <!-- From & To inputs -->
+                  <div class="hidden absolute -bottom-12 flex gap-2 bg-white">
+                     <div class="">
+                        <label class="text-[14px]" for="from">From</label>
+                        <input
+                           class="border border-slate-600 focus:border-violet-500 text-[16px] rounded-[4px] py-1 px-2 sm:py-2 sm:px-3"
+                           type="text"
+                           name=""
+                           id="from" />
+                     </div>
+                     <div class="">
+                        <label class="text-[14px]" for="to">To</label>
+                        <input
+                           class="border border-slate-600 rounded-[4px] text-[16px] focus:border-violet-500 py-1 px-2 sm:py-2 sm:px-3"
+                           type="text"
+                           id="to" />
+                     </div>
+                  </div>
+
+                  <div class="relative flex flex-col w-full">
+                     <label
+                        class="block absolute left-2 -top-3 bg-white rounded-sm text-[14px] px-2"
+                        >Trip</label
+                     >
+                     <select
+                        class="border border-slate-600 rounded-[4px] text-[16px] focus:border-violet-500 py-1 px-2 sm:py-2 sm:px-3">
+                        <option>Return</option>
+                        <option>One Way</option>
+                     </select>
+                  </div>
+                  <div class="flex flex-col relative w-full">
+                     <label
+                        class="bg-white absolute left-2 -top-3 text-[14px]"
+                        for="from-to"
+                        >Depart- Return</label
+                     >
                      <input
                         class="border border-slate-600 focus:border-violet-500 text-[16px] rounded-[4px] py-1 px-2 sm:py-2 sm:px-3"
                         type="text"
-                        name=""
-                        id="from" />
+                        name="from-to"
+                        id="from-to"
+                        placeholder="07 Nov 24 - 13 Nov 24" />
                   </div>
-                  <div class="">
-                     <label class="text-[14px]" for="to">To</label>
+                  <div class="flex flex-col relative w-full">
+                     <label
+                        class="bg-white absolute left-2 -top-3 text-[14px]"
+                        for="from-to"
+                        >Passenger - Class</label
+                     >
                      <input
-                        class="border border-slate-600 rounded-[4px] text-[16px] focus:border-violet-500 py-1 px-2 sm:py-2 sm:px-3"
+                        class="border border-slate-600 focus:border-violet-500 text-[16px] rounded-[4px] py-1 px-2 sm:py-2 sm:px-3"
                         type="text"
-                        id="to" />
+                        name="from-to"
+                        id="from-to"
+                        placeholder="1 Passenger, Economy" />
+                  </div>
+               </form>
+               <div
+                  class="flex justify-end gap-2 sm:gap-3 md:gap-6 text-[#112211] text-[14px] font-medium tracking-normal leading-tight">
+                  <button
+                     class="flex items-center gap-1 bg-white hover:bg-[#8DD3BB] hover:text-white py-1 sm:py-2 px-2 sm:px-4 rounded active:scale-95 transition-all duration-200 ease-linear">
+                     <img src="./assets/img/icons/add.svg" alt="" />
+                     <span> Add Promo Code</span>
+                  </button>
+                  <button
+                     class="flex items-center gap-1 bg-[#8DD3BB] py-1 sm:py-2 px-2 sm:px-4 rounded hover:text-white active:scale-95 transition-all duration-200 ease-linear">
+                     <img src="./assets/img/icons/send-plane.svg" alt="" />
+                     <span> Show Filghts</span>
+                  </button>
+               </div>
+            </div>
+         </section>
+
+         <section>
+            <!--  Trip plans-->
+            <div class="flex justify-between mb-10">
+               <span class="flex flex-col leading-tight tracking-normal">
+                  <span
+                     class="font-semibold text-[0.8rem] sm:text-[1.7rem] md:text-[2rem]"
+                     >Plan your perfect trip</span
+                  >
+                  <p
+                     class="font-normal text-[0.75rem] sm:text-[0.88rem] md:text-[1rem] text-[#112211]">
+                     Search Flights & Places Hire to our most popular
+                     destinations
+                  </p>
+               </span>
+               <span class="flex items-center">
+                  <button
+                     type="button"
+                     class="toggle-cities-btn text-[0.68rem] sm:text-[0.77rem] md:text-[0.875rem] font-medium px-[12px] py-[7px] sm:px-[14px] sm:py-1.5 md:px-4 md:py-2 border border-[#8DD3BB] rounded hover:bg-[#8DD3BB] hover:text-white transition-all duration-200 ease-linear active:scale-95">
+                     See more places
+                  </button>
+               </span>
+            </div>
+            <!-- List of cities -->
+            <div
+               class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8">
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Istanbul.png"
+                        alt="The picture of Istanbul"
+                        width="90"
+                        height="90" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]"
+                        >Istanbul, Turkiye</span
+                     >
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
                   </div>
                </div>
-
-               <div class="relative flex flex-col w-full">
-                  <label
-                     class="block absolute left-2 -top-3 bg-white rounded-sm text-[14px] px-2"
-                     >Trip</label
-                  >
-                  <select
-                     class="border border-slate-600 rounded-[4px] text-[16px] focus:border-violet-500 py-1 px-2 sm:py-2 sm:px-3">
-                     <option>Return</option>
-                     <option>One Way</option>
-                  </select>
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Sydney.png"
+                        alt="The picture of Sydney" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]"
+                        >Sydney, Australia</span
+                     >
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
                </div>
-               <div class="flex flex-col relative w-full">
-                  <label
-                     class="bg-white absolute left-2 -top-3 text-[14px]"
-                     for="from-to"
-                     >Depart- Return</label
-                  >
-                  <input
-                     class="border border-slate-600 focus:border-violet-500 text-[16px] rounded-[4px] py-1 px-2 sm:py-2 sm:px-3"
-                     type="text"
-                     name="from-to"
-                     id="from-to"
-                     placeholder="07 Nov 24 - 13 Nov 24" />
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Baku.png"
+                        alt="The picture of Baku" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]"
+                        >Baku, Azerbaijan</span
+                     >
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
                </div>
-               <div class="flex flex-col relative w-full">
-                  <label
-                     class="bg-white absolute left-2 -top-3 text-[14px]"
-                     for="from-to"
-                     >Passenger - Class</label
-                  >
-                  <input
-                     class="border border-slate-600 focus:border-violet-500 text-[16px] rounded-[4px] py-1 px-2 sm:py-2 sm:px-3"
-                     type="text"
-                     name="from-to"
-                     id="from-to"
-                     placeholder="1 Passenger, Economy" />
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Male.png"
+                        alt="The picture of Male" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]"
+                        >Malé, Maldives</span
+                     >
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
                </div>
-            </form>
-            <div
-               class="flex justify-end gap-2 sm:gap-3 md:gap-6 text-[#112211] text-[14px] font-medium tracking-normal leading-tight">
-               <button
-                  class="flex items-center gap-1 bg-white hover:bg-[#8DD3BB] hover:text-white py-1 sm:py-2 px-2 sm:px-4 rounded active:scale-95 transition-all duration-200 ease-linear">
-                  <img src="./assets/img/icons/add.svg" alt="" />
-                  <span> Add Promo Code</span>
-               </button>
-               <button
-                  class="flex items-center gap-1 bg-[#8DD3BB] py-1 sm:py-2 px-2 sm:px-4 rounded hover:text-white active:scale-95 transition-all duration-200 ease-linear">
-                  <img src="./assets/img/icons/send-plane.svg" alt="" />
-                  <span> Show Filghts</span>
-               </button>
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Paris.png"
+                        alt="The picture of Paris" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]"
+                        >Paris, France</span
+                     >
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/NY.png"
+                        alt="The picture of New York" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">New York, US</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/London.png"
+                        alt="The picture of London" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">London, UK</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Tokyo.png"
+                        alt="The picture of Tokyo" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Tokyo, Japan</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="flex group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Dubai.png"
+                        alt="The picture of Dubai" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Dubai, UAE</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <!-- Hidden cities -->
+               <div
+                  class="group hidden-city hidden p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Tokyo.png"
+                        alt="The picture of Tokyo" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Tokyo, Japan</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="hidden-city hidden group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Dubai.png"
+                        alt="The picture of Dubai" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Dubai, UAE</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="group hidden-city hidden p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Tokyo.png"
+                        alt="The picture of Tokyo" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Tokyo, Japan</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="group hidden-city hidden p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Tokyo.png"
+                        alt="The picture of Tokyo" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Tokyo, Japan</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="hidden-city hidden group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Dubai.png"
+                        alt="The picture of Dubai" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Dubai, UAE</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="group hidden-city hidden p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
+                  <div>
+                     <img
+                        src="./assets/img/cities/Tokyo.png"
+                        alt="The picture of Tokyo" />
+                  </div>
+                  <div
+                     class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
+                     <span class="font-semibold text-[1rem]">Tokyo, Japan</span>
+                     <span
+                        class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
+                        <span>Flights</span>
+                        <span>•</span>
+                        <span>Hotels</span>
+                        <span>•</span>
+                        <span>Resorts</span>
+                     </span>
+                  </div>
+               </div>
             </div>
-         </div>
-      </div>
-
-      <!--  Trip plans-->
-      <div
-         class="flex flex-col gap-7 sm:gap-8 md:gap-10 md:px-[6.5rem] mb-[5.0625rem]">
-         <div class="flex justify-between">
-            <span class="flex flex-col leading-tight tracking-normal">
-               <span
-                  class="font-semibold text-[0.8rem] sm:text-[1.7rem] md:text-[2rem]"
-                  >Plan your perfect trip</span
-               >
-               <p
-                  class="font-normal text-[0.75rem] sm:text-[0.88rem] md:text-[1rem] text-[#112211]">
-                  Search Flights & Places Hire to our most popular destinations
-               </p>
-            </span>
-            <span class="flex items-center">
+            <!-- See less cities -->
+            <div class="w-full flex justify-center">
                <button
                   type="button"
-                  class="text-[0.68rem] sm:text-[0.77rem] md:text-[0.875rem] font-medium px-[12px] py-[7px] sm:px-[14px] sm:py-1.5 md:px-4 md:py-2 border border-[#8DD3BB] rounded hover:bg-[#8DD3BB] hover:text-white transition-all duration-200 ease-linear active:scale-95">
-                  See more places
+                  class="see-less-cities-btn hidden text-[0.68rem] sm:text-[0.77rem] md:text-[0.875rem] font-medium px-[12px] py-[7px] sm:px-[14px] sm:py-1.5 md:px-4 md:py-2 rounded-md underline hover:bg-[#8DD3BB] hover:text-white transition-all duration-200 ease-linear active:scale-95">
+                  See less
                </button>
-            </span>
-         </div>
-         <div
-            class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8">
-            <!-- <div class="grid flw gap-6 sm:gap-7 md:gap-8"> -->
+            </div>
+         </section>
+         <!-- Product cards -->
+         <section
+            class="flex flex-col justify-center md:flex-row gap-6 w-full mb-[4.375rem]">
             <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/Istanbul.png"
-                     alt="The picture of Istanbul"
-                     width="90"
-                     height="90" />
-               </div>
-               <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]"
-                     >Istanbul, Turkiye</span
+               class="flights-card relative group overflow-hidden flex flex-col items-center justify-end pt-[23.25rem] pr-[6.25rem] pb-[1.5rem] pl-[7.125rem] rounded-[20px] text-white leading-tight tracking-normal">
+               <img
+                  class="absolute left-0 top-0 w-full h-full -z-10 group-hover:scale-125 transition-all duration-100 ease-linear"
+                  src="./assets/img/Airport.png"
+                  alt="" />
+               <h2
+                  class="text-[1.95rem] sm:text-[2.2rem] md:text-[2.5rem] font-bold mb-2">
+                  Flights
+               </h2>
+               <p
+                  class="font-normal text-[0.75rem] sm:text-[0.88rem] md:text-[1rem] text-center mb-4">
+                  Search Flights & Places Hire to our most popular destinations
+               </p>
+               <button
+                  class="flex items-center gap-1 bg-[#8DD3BB] py-1 sm:py-2 px-2 sm:px-4 rounded text-black hover:text-white active:scale-95 transition-all duration-200 ease-linear">
+                  <img src="./assets/img/icons/send-plane.svg" alt="" />
+                  <span class=""> Show Filghts</span>
+               </button>
+            </div>
+            <div
+               class="hotels-card group overflow-hidden relative flex flex-col items-center justify-end pt-[23.25rem] pr-[6.25rem] pb-[1.5rem] pl-[7.125rem] rounded-[20px] text-white leading-tight tracking-normal">
+               <img
+                  class="absolute left-0 top-0 w-full h-full -z-10 group-hover:scale-125 transition-all duration-100 ease-linear"
+                  src="./assets/img/Hotel-by-sea.png"
+                  alt="" />
+               <h2
+                  class="text-[1.95rem] sm:text-[2.2rem] md:text-[2.5rem] font-bold mb-2">
+                  Flights
+               </h2>
+               <p
+                  class="font-normal text-[0.75rem] sm:text-[0.88rem] md:text-[1rem] text-center mb-4">
+                  Search Flights & Places Hire to our most popular destinations
+               </p>
+               <button
+                  class="flex items-center gap-1 bg-[#8DD3BB] py-1 sm:py-2 px-2 sm:px-4 rounded text-black hover:text-white active:scale-95 transition-all duration-200 ease-linear">
+                  <img src="./assets/img/icons/send-plane.svg" alt="" />
+                  <span class=""> Show Filghts</span>
+               </button>
+            </div>
+         </section>
+         <!-- Testimonials -->
+         <section class="testimonials w-full">
+            <!-- Testimonials header -->
+            <div class="flex justify-between mb-10">
+               <span class="flex flex-col leading-tight tracking-normal">
+                  <span
+                     class="font-semibold text-[0.8rem] sm:text-[1.7rem] md:text-[2rem]"
+                     >Reviews</span
                   >
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
-               </div>
+                  <p
+                     class="font-normal text-[0.75rem] sm:text-[0.88rem] md:text-[1rem] text-[#112211]">
+                     What people says about Golobe facilities
+                  </p>
+               </span>
+               <span class="flex items-center">
+                  <button
+                     type="button"
+                     class="toggle-review-btn text-[0.68rem] sm:text-[0.77rem] md:text-[0.875rem] font-medium px-[12px] py-[7px] sm:px-[14px] sm:py-1.5 md:px-4 md:py-2 border border-[#8DD3BB] rounded hover:bg-[#8DD3BB] hover:text-white transition-all duration-200 ease-linear active:scale-95">
+                     See all
+                  </button>
+               </span>
             </div>
+            <!--  -->
             <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/Sydney.png"
-                     alt="The picture of Sydney" />
+               class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full mb-6">
+               <div
+                  class="flex w-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “A real sense of community, nurtured”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        Really appreciate the help and support from the staff
+                        during these tough times. Shoutout to ...
+                        <!-- for helping
+                     me always, even when I was out of the country. And
+                     always available when needed. -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Olga</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Kai Tak</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/lake-by-mountain.png"
+                           alt="Lake by mountain"
+                           height="200" />
+                     </span>
+                  </div>
                </div>
                <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]"
-                     >Sydney, Australia</span
-                  >
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
-               </div>
-            </div>
-            <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/Baku.png"
-                     alt="The picture of Baku" />
-               </div>
-               <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]"
-                     >Baku, Azerbaijan</span
-                  >
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
-               </div>
-            </div>
-            <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/Male.png"
-                     alt="The picture of Male" />
-               </div>
-               <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]">Malé, Maldives</span>
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
-               </div>
-            </div>
-            <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/Paris.png"
-                     alt="The picture of Paris" />
+                  class="flex w-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “The facilities are superb. Clean, slick, bright.”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        “A real sense of community, nurtured”Really appreciate
+                        the help and support from the staff ...
+                        <!-- during these tough
+                     times. Shoutout to Katie for helping me always, even
+                     when I was out of the country. And always available when
+                     needed.View moreOlgaWeave Studios – Kai TakGoogle -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Thomas</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Olympic</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/pole.png"
+                           alt="Pole picture"
+                           height="200"
+                           width="377" />
+                     </span>
+                  </div>
                </div>
                <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]">Paris, France</span>
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
+                  class="w-full flex flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “A real sense of community, nurtured”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        “A real sense of community, nurtured”Really appreciate
+                        the help and support from the ...
+                        <!-- during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Eliot</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Kai Tak</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/underwater.png"
+                           alt="Underwater picture"
+                           height="200" />
+                     </span>
+                  </div>
                </div>
-            </div>
-            <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/NY.png"
-                     alt="The picture of New York" />
+               <!-- Hidden reviews -->
+               <div
+                  class="hidden-review hidden w-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “A real sense of community, nurtured”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        Really appreciate the help and support from the staff
+                        during these tough times. Shoutout to ...
+                        <!-- for helping
+                     me always, even when I was out of the country. And
+                     always available when needed. -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Olga</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Kai Tak</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/lake-by-mountain.png"
+                           alt="Lake by mountain"
+                           height="200" />
+                     </span>
+                  </div>
                </div>
                <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]">New York, US</span>
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
-               </div>
-            </div>
-            <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/London.png"
-                     alt="The picture of London" />
-               </div>
-               <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]">London, UK</span>
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
-               </div>
-            </div>
-            <div
-               class="group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] flex gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/Tokyo.png"
-                     alt="The picture of Tokyo" />
-               </div>
-               <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]">Tokyo, Japan</span>
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
-               </div>
-            </div>
-            <div
-               class="flex sm:hidden md:flex group p-[0.75rem] sm:p-[0.88rem] md:p-[1rem] gap-4 border shadow-[0px_4px_16px_0px_rgba(17,34,17,0.05)] rounded-2xl hover:bg-[#8DD3BB] transition-all duration-200 ease-linear cursor-pointer">
-               <div>
-                  <img
-                     src="./assets/img/cities/Dubai.png"
-                     alt="The picture of Dubai" />
+                  class="hidden-review hidden w-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “The facilities are superb. Clean, slick, bright.”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        “A real sense of community, nurtured”Really appreciate
+                        the help and support from the staff ...
+                        <!-- during these tough
+                     times. Shoutout to Katie for helping me always, even
+                     when I was out of the country. And always available when
+                     needed.View moreOlgaWeave Studios – Kai TakGoogle -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Thomas</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Olympic</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/pole.png"
+                           alt="Pole picture"
+                           height="200"
+                           width="377" />
+                     </span>
+                  </div>
                </div>
                <div
-                  class="flex flex-col justify-center items-start gap-2 text-[#112211] leading-tight tracking-normal group-hover:text-white">
-                  <span class="font-semibold text-[1rem]">Dubai, UAE</span>
-                  <span class="flex gap-1 sm:gap-2 font-medium text-[0.875rem]">
-                     <span>Flights</span>
-                     <span>•</span>
-                     <span>Hotels</span>
-                     <span>•</span>
-                     <span>Resorts</span>
-                  </span>
+                  class="hidden-review hidden w-0-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “A real sense of community, nurtured”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        “A real sense of community, nurtured”Really appreciate
+                        the help and support from the ...
+                        <!-- during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Eliot</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Kai Tak</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/underwater.png"
+                           alt="Underwater picture"
+                           height="200" />
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="hidden-review hidden w-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “A real sense of community, nurtured”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        Really appreciate the help and support from the staff
+                        during these tough times. Shoutout to ...
+                        <!-- for helping
+                     me always, even when I was out of the country. And
+                     always available when needed. -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Olga</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Kai Tak</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/lake-by-mountain.png"
+                           alt="Lake by mountain"
+                           height="200" />
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="hidden-review hidden w-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “The facilities are superb. Clean, slick, bright.”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        “A real sense of community, nurtured”Really appreciate
+                        the help and support from the staff ...
+                        <!-- during these tough
+                     times. Shoutout to Katie for helping me always, even
+                     when I was out of the country. And always available when
+                     needed.View moreOlgaWeave Studios – Kai TakGoogle -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Thomas</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Olympic</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/pole.png"
+                           alt="Pole picture"
+                           height="200"
+                           width="377" />
+                     </span>
+                  </div>
+               </div>
+               <div
+                  class="hidden-review hidden w-0-full flex-col p-6 rounded-[1.25rem] border shadow-[2px_4px_16px_0px_rgba(141,211,187,0.9)] hover:-translate-y-1 transition-all duration-200 ease-linear">
+                  <div
+                     class="flex flex-col text-[#112211] leading-tight tracking-normal">
+                     <h3 class="text-[1.5rem] font-bold">
+                        “A real sense of community, nurtured”
+                     </h3>
+                     <p class="text-[0.9375rem] font-medium">
+                        “A real sense of community, nurtured”Really appreciate
+                        the help and support from the ...
+                        <!-- during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle -->
+                     </p>
+                     <span
+                        class="font-bold text-[0.875rem] cursor-pointer self-end hover:underline"
+                        >View more</span
+                     >
+                  </div>
+                  <div class="flex gap-3">
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                     <img src="./assets/img/icons/star-yellow.svg" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="font-bold text-[0.875rem] mb-1">Eliot</span>
+                     <span class="font-medium text-[0.75rem] mb-3"
+                        >Weave Studios – Kai Tak</span
+                     >
+                     <span class="mb-10 flex items-center gap-2">
+                        <img
+                           src="./assets/img/icons/google.svg"
+                           alt="Google icon"
+                           width="24"
+                           height="24" />
+                        <span class="font-bold text-[0.75rem]">Google</span>
+                     </span>
+                     <span>
+                        <img
+                           src="./assets/img/underwater.png"
+                           alt="Underwater picture"
+                           height="200" />
+                     </span>
+                  </div>
                </div>
             </div>
-         </div>
-      </div>
+            <!-- See less reviews -->
+            <div class="w-full flex justify-center">
+               <button
+                  type="button"
+                  class="see-less-reviews-btn hidden text-[0.68rem] sm:text-[0.77rem] md:text-[0.875rem] font-medium px-[12px] py-[7px] sm:px-[14px] sm:py-1.5 md:px-4 md:py-2 rounded-md underline hover:bg-[#8DD3BB] hover:text-white transition-all duration-200 ease-linear active:scale-95">
+                  See less
+               </button>
+            </div>
+         </section>
+         <!-- </div> -->
+      </main>
+
+      .
       <!-- Overlay -->
       <div
          class="overlay hidden absolute top-0 bottom-0 w-full h-full bg-black opacity-50 z-10"></div>
@@ -463,5 +1116,6 @@
       <script src="./components/header/header-default.js"></script>
       <script src="./components/header/header.js"></script>
       <!-- <script src="./components/header/header-logged-in.js"></script> -->
+      <script src="./assets/js/main.js"></script>
    </body>
 </html>

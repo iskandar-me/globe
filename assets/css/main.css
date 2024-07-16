@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+* {
    outline: inherit;
 }
 .header-wrapper {
    height: 100vh;
-   background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Landing-bg-img.jpeg) no-repeat  top;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/Landing-bg-img.jpeg) no-repeat top;
    background-size: cover;
    background-attachment: fixed;
    /* background: #112211b3; */
